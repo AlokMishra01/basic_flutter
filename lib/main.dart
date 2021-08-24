@@ -1,7 +1,6 @@
-import 'package:basic_flutter/image.dart';
-import 'package:basic_flutter/multi/colum_view.dart';
-import 'package:basic_flutter/multi/row_view.dart';
-import 'package:basic_flutter/multi/wrap_view.dart';
+import 'package:basic_flutter/list_view.dart';
+import 'package:basic_flutter/multi/grid_view.dart';
+import 'package:basic_flutter/multi/stack_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WrapView(),
+      home: GrigViewPage(),
     );
   }
 }
