@@ -7,25 +7,31 @@ class ListViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.red,
-        child: ListView.separated(
+        color: Colors.white,
+        child: ListView.builder(
           shrinkWrap: true,
-          itemCount: l.length,
-          separatorBuilder: (context, index) {
-            return Container(
-              width: double.infinity,
-              height: 20,
-              color: Colors.white,
-              child: Text('Hello'),
-            );
-          },
+          itemCount: 5,
+          
           itemBuilder: (context, index) {
-            return Text(
-            l[index],
-            style: TextStyle(
-              fontSize: 50,
-            ),
-          );
+            return ListTile(
+              leading: ClipRRect(
+                borderRadius: BorderRadius.circular(24),
+                child: Image.asset(
+                'images/mt.jpg',
+                width: 48,
+                height: 48,
+                fit: BoxFit.cover,
+              ),
+              ),
+              title: Text('9869050723'),
+              subtitle: Text('Alok Mishra Nameste Alok Mishra Nameste Alok Mishra Nameste'),
+              trailing: Icon(Icons.call),
+              isThreeLine: true,
+              onTap: () {
+                print('Hello');
+              },
+              enabled: false,
+            );
           },  
       ),
       )
