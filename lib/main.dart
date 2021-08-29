@@ -1,6 +1,7 @@
 import 'package:basic_flutter/bittons_view.dart';
 import 'package:basic_flutter/bottom_nav_bar.dart';
 import 'package:basic_flutter/drawer_view.dart';
+import 'package:basic_flutter/flutter_ui_1.dart';
 import 'package:basic_flutter/list_view.dart';
 import 'package:basic_flutter/multi/grid_view.dart';
 import 'package:basic_flutter/multi/stack_view.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ButtonsView(),
+      home: FlutterUI1(),
     );
   }
 }
