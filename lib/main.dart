@@ -1,7 +1,10 @@
 import 'package:basic_flutter/bittons_view.dart';
 import 'package:basic_flutter/bottom_nav_bar.dart';
 import 'package:basic_flutter/drawer_view.dart';
+import 'package:basic_flutter/drop_down_button.dart';
 import 'package:basic_flutter/flutter_ui_1.dart';
+import 'package:basic_flutter/form_fields.dart';
+import 'package:basic_flutter/inkwell_gesture.dart';
 import 'package:basic_flutter/list_view.dart';
 import 'package:basic_flutter/multi/grid_view.dart';
 import 'package:basic_flutter/multi/stack_view.dart';
@@ -21,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FlutterUI1(),
+      home: FormFields(),
     );
   }
 }
